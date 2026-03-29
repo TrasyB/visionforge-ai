@@ -1,1 +1,76 @@
-<h1>My Website is Live!</h1>.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionForge AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #f3cf7a; --purple: #2e003e; --dark: #121212; --card: #1e1e1e; }
+        body { background-color: var(--dark); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+        .nav-bar { background: var(--purple); padding: 25px; text-align: center; border-bottom: 3px solid var(--gold); }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        h1 { color: var(--gold); font-size: 24px; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { font-size: 12px; color: var(--gold); opacity: 0.8; }
+        
+        /* Dashboard Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .card { background: var(--card); border: 1px solid #333; border-radius: 15px; padding: 20px; text-align: center; transition: 0.3s; cursor: pointer; }
+        .card:hover { border-color: var(--gold); background: #252525; transform: translateY(-5px); }
+        .card i { font-size: 32px; color: var(--gold); margin-bottom: 10px; }
+        .card h3 { font-size: 13px; margin: 5px 0; color: #fff; }
+
+        /* Featured Tool */
+        .feature-box { background: var(--card); padding: 20px; border-radius: 15px; margin-top: 20px; border: 1px solid var(--gold); }
+        input { width: 90%; padding: 12px; margin: 15px 0; border-radius: 8px; border: 1px solid #444; background: #2c2c2c; color: white; }
+        .btn { background: var(--gold); color: var(--purple); padding: 12px 25px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; }
+        
+        .footer { margin-top: 40px; padding: 20px; font-size: 13px; border-top: 1px solid #333; }
+        .footer a { color: var(--gold); text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div style="font-size: 40px; margin-bottom: 5px;">🦅</div>
+        <h1>VisionForge AI</h1>
+        <div class="subtitle">Powered by Lolasura Miniinvest Skills</div>
+    </div>
+
+    <div class="container">
+        <div class="feature-box">
+            <h3><i class="fas fa-magic"></i> AI Image Generator</h3>
+            <p style="font-size: 12px; opacity: 0.7;">Create high-resolution art in seconds.</p>
+            <input type="text" placeholder="Enter your prompt (e.g., 'An eagle in a gold crown')">
+            <button class="btn" onclick="alert('Preparing AI Engine for VisionForge...')">Generate Art</button>
+        </div>
+
+        <div class="grid">
+            <div class="card" onclick="alert('Opening Image-to-Video Studio...')">
+                <i class="fas fa-play-circle"></i>
+                <h3>Image to Video</h3>
+            </div>
+            <div class="card" onclick="alert('Opening Text-to-Video Studio...')">
+                <i class="fas fa-clapperboard"></i>
+                <h3>Text to Video</h3>
+            </div>
+            <div class="card" onclick="alert('Opening Avatar Lip Sync...')">
+                <i class="fas fa-face-grin-stars"></i>
+                <h3>Avatar Lip Sync</h3>
+            </div>
+            <div class="card" onclick="alert('Opening Video Downloader...')">
+                <i class="fas fa-cloud-download-alt"></i>
+                <h3>Video Downloader</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://wa.me/2347040982373"><i class="fab fa-whatsapp"></i> Support</a>
+            <a href="https://romacromance.blogspot.com/"><i class="fas fa-blog"></i> Blog</a>
+            <a href="https://www.facebook.com/share/17aEcCgv6z/"><i class="fab fa-facebook"></i> Facebook</a>
+            <p style="margin-top: 20px; opacity: 0.5;">&copy; 2026 VisionForge AI Studio</p>
+        </div>
+    </div>
+
+</body>
+</html>
